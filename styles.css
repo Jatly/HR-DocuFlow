@@ -1,0 +1,293 @@
+/* Define Color Variables for High-Tech / Futuristic Theme */
+:root {
+    --bg-light: #1b1b1b; /* Dark background for a techy feel */
+    --bg-dark: #121212; /* Deep black for headers and dark mode */
+    --text-light: #e0e0e0; /* Light gray text for readability */
+    --text-dark: #ffffff; /* White text for dark mode */
+    --primary: #00bcd4; /* Bright cyan for main elements */
+    --secondary: #9e9e9e; /* Medium gray for secondary text */
+    --accent: #00ff99; /* Neon green for buttons, links, and highlights */
+    --border-color: #424242; /* Dark gray borders */
+    --highlight: #00c853; /* Bright green for accenting buttons or icons */
+    --gradient-light: linear-gradient(45deg, #00bcd4, #00c853); /* Cool gradient for backgrounds */
+    --gradient-dark: linear-gradient(45deg, #121212, #1b1b1b); /* Dark gradient for hover states */
+}
+
+/* General Reset and Body */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align to the top of the viewport */
+    min-height: 100vh;
+    background-color: var(--bg-light);
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    flex-direction: column; /* Stack all content vertically */
+    color: var(--text-light); /* Light text for contrast */
+}
+.logo {
+    height: 50px; /* Adjust the height as needed */
+    width: auto;
+    vertical-align: middle; /* Align the logo vertically with the text */
+    margin-right: 10px; /* Add space between the logo and the text */
+}
+/* Form Styling */
+form {
+    margin: 20px 0; /* Added vertical margin */
+    padding: 30px;
+    background: var(--gradient-dark); /* Dark gradient for form background */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+    transform: scale(1.05);
+}
+
+/* Headings */
+h3 {
+    font-size: 1.8em;
+    color: var(--highlight); /* Bright cyan for headings */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 50px;  /* Adjust the font size */
+    font-weight: 600;   /* Make the title bold */
+    color: var(--highlight);        /* Set the text color */
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Add spacing below the title */
+    padding: 10px 0;    /* Add padding to the top and bottom */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+/* Form Rows */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    flex: 0 0 180px;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    font-weight: 600;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.form-row input,
+.form-row select {
+    flex: 1;
+    padding: 12px;
+    margin: 5px 0;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    background-color: #333;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+    border-color: var(--highlight);
+    outline: none;
+    box-shadow: 0 0 8px var(--highlight);
+}
+
+/* Buttons */
+
+button {
+    padding: 12px 20px;
+    background: var(--gradient-light); /* Cool gradient for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 350px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 20px auto; /* Horizontally center the button */
+}
+
+
+button:hover {
+    background: var(--highlight);
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0px 0px 6px 3px rgba(0, 255, 153, 0.6); /* Neon green focus */
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg-dark);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+    color: var(--text-light);
+}
+
+th {
+    background-color: var(--highlight); /* Cyan background for table header */
+    font-size: 1.1em;
+    color: #fff;
+}
+
+td {
+    background-color: #333;
+    font-size: 0.95em;
+}
+
+/* Checklist Styling */
+.checklist-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.checklist-row span {
+    width: 30%;
+    display: inline-block;
+    padding-left: 10px; /* Adjust this value as needed */
+    text-align: left; /* Ensures text is aligned to the left */
+}
+
+
+/* Default Styles for Summary Section */
+.summary-section {
+    display: block; /* Default display */
+    margin-top: 20px; /* Add spacing from the content above */
+}
+
+/* Ensure the checklist form has appropriate layout */
+#checklistForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Optional: Adds spacing between form sections */
+    width: 100%;
+}
+
+/* Display the summary section below the form */
+#submittedData {
+    display: block;
+    margin-top: 30px; /* Spacing between form and summary */
+    width: 100%;
+}
+
+/* Summary Section Styling */
+#summary {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #222; /* Darker background for summary */
+    border-radius: 8px;
+    color: var(--text-light);
+}
+
+/* Summary Table Styling */
+#summary table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+#summary th, #summary td {
+    padding: 12px;
+    border: 2px solid var(--border-color); /* Dark borders */
+    text-align: left;
+}
+
+#summary th {
+    background-color: var(--primary); /* Cyan background for headers */
+    font-weight: bold;
+}
+
+#summary td {
+    background-color: #333;
+    font-size: 0.95em;
+}
+
+/* Responsive Styles */
+/* Default Styling */
+h4 {
+    font-size: 1.5rem; /* Base size for larger screens */
+    padding: 8px 0;    /* Spacing around the title */
+}
+
+h3 {
+    font-size: 1.1rem; /* Smaller than h4 for hierarchy */
+    padding: 4px 0;    /* Spacing around the title */
+}
+
+/* Adjustments for medium-sized screens (between 481px and 870px) */
+@media (max-width: 870px) and (min-width: 481px) {
+    h4 {
+        font-size: 1.4rem; /* Slightly smaller for medium screens */
+        padding: 6px 0;    /* Slightly reduced padding */
+    }
+
+    h3 {
+        font-size: 1.1rem;  /* Maintain font size for smaller screens */
+        padding: 4px 0;     /* Padding stays consistent */
+    }
+}
+
+/* Adjustments for smaller screens (below 480px) */
+@media (max-width: 480px) {
+    h4 {
+        font-size: 1.3rem; /* Smaller for small screens */
+        padding: 5px 0;    /* Less padding for smaller screens */
+    }
+
+    h3 {
+        font-size: 1rem;   /* Further reduce font size for small screens */
+        padding: 3px 0;    /* Smaller padding for small screens */
+    }
+}
+
+/* Further adjustment for devices between 438px and 490px */
+@media (max-width: 490px) and (min-width: 438px) {
+    h4 {
+        font-size: 1.35rem; /* Slightly smaller for screens in this range */
+        padding: 5px 0;     /* Adjust padding */
+    }
+
+    h3 {
+        font-size: 1rem;   /* Keep h3 font size at 1rem */
+        padding: 3px 0;    /* Adjust padding for consistency */
+    }
+}

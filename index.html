@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal-File Checklist</title>
+  <link rel="icon" href="icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="checklistForm">
+    <h4><img src="logo.png" alt="Logo" class="logo"> PERSONAL-FILE CHECKLIST</h4>
+    <h3>Employee Information</h3>
+    <div class="form-row">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+    </div>
+    
+    <div class="form-row">
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" name="designation" required>
+    
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required>
+    </div>
+    
+    <div class="form-row">
+        <label for="doj">Date of Joining:</label>
+        <input type="date" id="doj" name="doj" required>
+    
+        <label for="ecode">E-Code:</label>
+        <input type="text" id="ecode" name="ecode" required>
+    </div>
+    
+    <h3>Checklist</h3>
+    <div id="checklistItems"></div>
+    
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Summary will appear here below the form -->
+  <div id="submittedData" style="display:none;">
+    <div id="summary"></div>
+    <button id="printButton">Print</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
