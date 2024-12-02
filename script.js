@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
         printWindow.document.write(`
           <html>
           <head>
-                <title>Personal File Check List</title>
+                <title>Personal File Checklist</title>
     <style>
       body {
         font-family: Arial, sans-serif;
