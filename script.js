@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Create the summary HTML
         let summaryHtml = `
-          <h3>Personal Information</h3>
+          <h3>Employee Information</h3>
           <table>
             <tr><th>Name</th><td>${name}</td></tr>
             <tr><th>Location</th><td>${location}</td></tr>
