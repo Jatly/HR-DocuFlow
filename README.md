@@ -33,10 +33,11 @@ HR DocuFlow is ideal for HR departments that need a fast and standardized way to
 ![Checklist Submission](4.png)
 
 ### 📤 Generated Checklist Preview
-![Generated Checklist](6.png)
+![Generated Checklist](4.png)
+![Checklist Submission](5.png)
 
 ### 🖨️ Print-Friendly View
-![Print View](5.png)
+![Print View](6.png)
 
 ---
 
