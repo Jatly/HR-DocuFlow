@@ -25,18 +25,18 @@ HR DocuFlow is ideal for HR departments that need a fast and standardized way to
 ## 📸 Screenshots
 
 ### 🧾 Input Form (Dark Mode)
-![Form UI](./assets/1.png)
+![Form UI](1.png)
 
 ### 📋 Checklist Selection
-![Checklist Part 1](./assets/2.png)  
-![Checklist Part 2](./assets/3.png)  
-![Checklist Submission](./assets/4.png)
+![Checklist Part 1](2.png)  
+![Checklist Part 2](3.png)  
+![Checklist Submission](4.png)
 
 ### 📤 Generated Checklist Preview
-![Generated Checklist](./assets/6.png)
+![Generated Checklist](6.png)
 
 ### 🖨️ Print-Friendly View
-![Print View](./assets/5.png)
+![Print View](5.png)
 
 ---
 
